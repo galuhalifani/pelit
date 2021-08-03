@@ -68,5 +68,19 @@
     "fullName": "Joanne Treutel",
     "photoProfile": "https://cdn.fakercloud.com/avatars/peejfancher_128.jpg",
     "balance": "3209000.98"
+  },
+  {
+    "email": "galuh.alifani@gmail.com",
+    "password": "pelit123",
+    "fullName": "Galuh Adika Alifani",
+    "photoProfile": "https:\/\/ik.imagekit.io\/77pzczg37zw\/Alifani_G.jpg?updatedAt=1625136098428",
+    "balance": "20000000"
+  },
+  {
+    "email": "testuser@pelit.com",
+    "password": "pelit123",
+    "fullName": "Pelit Test User",
+    "photoProfile": "https://cdn.fakercloud.com/avatars/allagringaus_128.jpg",
+    "balance": "20000000"
   }
 ]

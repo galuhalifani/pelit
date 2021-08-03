@@ -2,14 +2,14 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "pelit-app",
+    "database": "pelit-finance",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "postgres",
-    "database": "pelit_test",
+    "database": "pelit_finance_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "logging": false

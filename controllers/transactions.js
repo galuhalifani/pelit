@@ -283,10 +283,7 @@ class TransactionController {
 
   static async postOne(req, res) {
     const UserId = +req.params.UserId;
-    // console.log('USERID', UserId)
     const { type, fullDate, category, note, amount, title } = req.body;
-    // console.log('date', fullDate)
-    // console.log('urlImage', req.urlImage)
     const fullDateArr = fullDate.split("-");
     const year = fullDateArr[0];
     const month = fullDateArr[1];
@@ -325,11 +322,11 @@ class TransactionController {
       res.status(500).json({ message: error });
     }
   }
+
   static async putOne(req, res) {
-    // console.log(req.params, 'PARAMSS')
     const TransactionId = req.params.TransactionId;
+    
     console.log(TransactionId);
-    // console.log(TransactionId, 'TRANSID')
     const { type, fullDate, receiptImage, category, note, amount, title } =
       req.body;
 
