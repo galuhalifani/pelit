@@ -25,8 +25,8 @@ class OCRController {
         }
       })
       .catch((err) => {
-        // console.error(err);
-        // res.status(500).json({ message: "fail" });
+        console.error(err);
+        res.status(500).json({ message: "fail" });
       });
     // if (totalPrice) {
     // } else {
