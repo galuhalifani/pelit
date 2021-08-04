@@ -2,6 +2,10 @@ const tesseract = require("../OCR");
 
 class OCRController {
   static postOcr(req, res) {
+    if (req.file.size > 350000) {
+      console.log('image is too large');
+      res.status(400).json({ message: "image is too large" });
+    } else {
     const imageUrl = req.file.buffer;
     // console.log("masuk controller", imageUrl);
     // const imageUrl = req.urlImage
@@ -28,6 +32,7 @@ class OCRController {
     // } else {
 
     // }
+    }
   }
 }
 module.exports = OCRController;
