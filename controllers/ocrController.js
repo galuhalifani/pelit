@@ -8,17 +8,21 @@ class OCRController {
       res.status(400).json({ message: "image is too large" });
     } else {
     const imageUrl = req.file.buffer;
+    console.log(imageUrl, 'IMAGEURL')
     // console.log("masuk controller", imageUrl);
     // const imageUrl = req.urlImage
     // const { imageUrl } = req.body
     // console.log(req.body)
     // console.log("gambar di ocrController, BUFFER", imageUrl);
 
-    if (!imageUrl) return res.status(400).json({ message: "bad request" });
+    if (!imageUrl) {
+      console.log('imageURL false')
+      return res.status(400).json({ message: "bad request" });
+    }
 
     tesseract(imageUrl)
       .then((dataObj) => {
-        // console.log("masuk tesseract", dataObj);
+        console.log("masuk tesseract", dataObj);
         if (dataObj) {
           res.status(200).json({ ...dataObj });
         } else {
