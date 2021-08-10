@@ -1,9 +1,7 @@
-# pelit
+# PELIT APP
 
 Mobile app for your expenses
 
-notes:
-https://trello.com/b/GeMaFOTK/final-project
+To see demo, visit EXPO at https://expo.dev/@galuhalifani/pelit-finance
 
-aws:
-ec2-3-83-144-143.compute-1.amazonaws.com
+```(Android-friendly. Works functionally for iOS with some minor display components not properly rendered)```
